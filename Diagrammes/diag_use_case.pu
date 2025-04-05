@@ -1,0 +1,51 @@
+@startuml
+left to right direction
+
+actor Client
+actor Admin
+
+' Cas d'utilisation Client
+Client --> (S'authentifier)
+
+Client --> (Consulter la liste des produits)
+Client --> (Consulter un produit)
+Client --> (Rechercher produits)
+
+(Consulter la liste des produits) ..> (Filtrer les produits par marque/catégorie/prix) : <<extend>>
+
+Client --> (Ajouter un produit au panier)
+Client --> (Consulter et gérer son panier)
+Client --> (Passer une commande)
+Client --> (Recevoir un mail de confirmation)
+Client --> (Consulter l'historique des commandes)
+Client --> (Se déconnecter)
+
+' Relations includes
+(Passer une commande) ..> (S'authentifier) : <<include>>
+(Ajouter un produit au panier) ..> (S'authentifier) : <<include>>
+(Consulter et gérer son panier) ..> (S'authentifier) : <<include>>
+(Consulter l'historique des commandes) ..> (S'authentifier) : <<include>>
+
+' Cas d'utilisation Admin
+Admin --> (Gérer les clients)
+(Gérer les clients) --> (Consulter la liste des clients enregistrés)
+(Gérer les clients) --> (Ajouter un client)
+(Gérer les clients) --> (Supprimer un client)
+
+Admin --> (Gérer les produits)
+(Gérer les produits) --> (Ajouter un produit)
+(Gérer les produits) --> (Modifier un produit)
+(Gérer les produits) --> (Supprimer un produit)
+(Gérer les produits) --> (Ajouter une marque)
+(Gérer les produits) --> (Supprimer une marque)
+
+Admin --> (Gérer les commandes)
+(Gérer les commandes) --> (Modifier commande)
+(Gérer les commandes) --> (Confirmer commande)
+
+' Relations includes pour Admin
+(Gérer les clients) ..> (S'authentifier) : <<include>>
+(Gérer les produits) ..> (S'authentifier) : <<include>>
+(Gérer les commandes) ..> (S'authentifier) : <<include>>
+
+@enduml
