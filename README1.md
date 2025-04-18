@@ -80,6 +80,36 @@ Pour le 1er sprint, nous avons choisi :
 | **Nombre de jeux de tests**  | 1 | 1 | n | 1 |
 
 ---
+
+DIAGRAMME DE SEQUENCE
+
+
+TRADUCTION EN ALGORITHME
+Début
+    si vérifierConnexion() alors
+        si vérifierDroits() alors
+            se connecter()
+            afficherInterfaceAdmin()
+            accéderGestionProduits()
+            afficherFormulaireAjoutProduit()
+            produit = saisirNouveauProduit()
+            si vérifierInfosProduit(produit) alors
+                si verifierProduitExist(produit) alors
+                    messageErreur("Produit déjà existant")
+                    ajusterProduit(produit)
+                sinon
+                    associerMarque(produit)
+                    associerCategorie(produit)
+                    ajouterProduitDansBaseDeDonnées(produit)
+                    confirmationAjoutProduit()
+                fin si
+                afficherListeProduits()
+                ajoutProduitEffectué()
+            fin si
+        fin si
+    fin si
+Fin
+
 ### Cas d'utilisation 2 : Passer une commande
 ![Diagram](Diagrammes/commande.png)
 
@@ -93,4 +123,34 @@ Pour le 1er sprint, nous avons choisi :
 |  | Un mode de paiement choisi |  |  |  |  | T |
 | **Postcondition** | Recevoir un mail de confirmation | F | F | F | F | T |
 | **Nombre de jeux de tests** | 2 | 2 | 2*n | 1 | 1 |
+
+DIAGRAMME DE SEQUENCE
+
+
+TRADUCTION EN ALGORITHME
+
+Début
+    si vérifierConnexion() alors
+        si vérifierPanierVide() alors
+            messageErreur("Panier vide")
+        sinon
+            si vérifierQuantitéDisponible() alors
+                si vérifierStockDisponible() alors
+                    validerQuantité()
+                    infosLivraison = saisirInformationsLivraison()
+                    modePaiement = choisirModePaiement()
+                    commande = créerCommande()
+                    enregistrerCommande(commande)
+                    lierProduitsPanier(commande)
+                    associerModeDePaiement(commande, modePaiement)
+                    associerAdresseLivraison(commande, infosLivraison)
+                    envoyerMailConfirmation(commande)
+                    recevoirMailConfirmation()
+                sinon
+                    messageErreur("Quantité insuffisante en stock")
+                fin si
+            fin si
+        fin si
+    fin si
+Fin
 
