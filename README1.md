@@ -54,6 +54,13 @@ Le site web aura pour vocation de vendre des produits physiques ou numériques v
 
 ![Diagram](Diagrammes/usecase1.png)
 
+## Diagramme de classe preliminaire
+![Diagram](Diagrammes/DiagDeClasse.png)
+
+## Diagramme de classe detaille
+![Diagram](Diagrammes/DiagClassDetaille.png)
+
+
 ## Les Priorités des cas d’utilisation
 
 Pour le 1er sprint, nous avons choisi :
@@ -155,5 +162,6 @@ Début
 &nbsp;&nbsp;&nbsp;&nbsp;fin si  
 &nbsp;&nbsp;fin si  
 Fin
+
 
 
