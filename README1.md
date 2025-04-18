@@ -52,7 +52,7 @@ Le site web aura pour vocation de vendre des produits physiques ou numériques v
 
 ## Diagramme de cas d’utilisation
 
-![Diagramme UML](diagrammes/usecase1.png)
+![Diagram](Diagrammes/usecase1.png)
 
 ## Les Priorités des cas d’utilisation
 
@@ -114,23 +114,9 @@ Pour le 1er sprint, nous avons choisi :
 
 
 ## Cas d'utilisation de Haute Priorité
-### Cas d'utilisation 1 : Connexion de l'utilisateur
-![Diagramme de connexion](diagrammes/connexion.png)
 
-#### Table de décision pour la connexion de l'utilisateur :
-|                              | 1 | 2 | 3 | 4 |
-|------------------------------|---|---|---|---|
-| **Préconditions**            |   |   |   |   |
-| Identifiant saisi            | F | T | T | T |
-| Mot de passe saisi           | T | F | T | T |
-| Identifiants valides         | T | T | F | T |
-| **Postcondition**            |   |   |   |   |
-| Connexion réussie            | F | F | F | T |
-| **Nombre de jeux de tests**  | 1 | 1 | n | 1 |
-
----
-### Cas d'utilisation 2 : Ajouter un produit au panier
-![Diagramme de panier](diagrammes/panier.png)
+### Cas d'utilisation 1 : Ajouter un produit au panier
+![Diagram](Diagrammes/panier.png)
 
 #### Table de décision pour l'ajout d'un produit au panier :
 |                              | 1 | 2 | 3 | 4 |
@@ -145,8 +131,8 @@ Pour le 1er sprint, nous avons choisi :
 | **Nombre de jeux de tests**  | 1 | 1 | n | 1 |
 
 ---
-### Cas d'utilisation 3 : Passer une commande
-![Diagramme de commande](diagrammes/commande.png)
+### Cas d'utilisation 2 : Passer une commande
+![Diagram](Diagrammes/commande.png)
 
 #### Table de décision pour passer une commande :
 |  | 1 | 2 | 3 | 4 | 5 |
