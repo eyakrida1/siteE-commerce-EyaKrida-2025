@@ -57,59 +57,8 @@ Le site web aura pour vocation de vendre des produits physiques ou numériques v
 ## Les Priorités des cas d’utilisation
 
 Pour le 1er sprint, nous avons choisi :
-- Pour l’administrateur : Ajouter un produit au site
-- Pour le client : Passer une commande
-
-### Cas d’utilisation : Ajouter produit au site
-**Acteur principal** : Administrateur
-
-#### Préconditions
-- L’administrateur est connecté au back-office (interface d’administration).
-- Il a les droits nécessaires pour gérer les produits.
-- Les informations du produit sont bien remplies.
-- Le produit n’existe pas déjà dans la base.
-
-#### Postconditions
-- Le nouveau produit est visible sur le site e-commerce côté client.
-- Il est listé dans l’espace "Gestion des produits" de l’admin.
-- Les clients peuvent le consulter et l’ajouter à leur panier.
-
-|  | 1 | 2 | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- |
-| **Préconditions** | Administrateur connecté | F | T | T | T | T |
-|  | Administrateur possédant les droits | F | T | T | T |
-|  | Produit non existant dans la base |  | F | T | T |
-|  | Infos du produit bien remplies |  |  | F | T |
-| **Postcondition** | Ajout effectué | F | F | F | F | T |
-| **Nombre de jeux de tests** | 2 | 2 | 2*n | 1 | 1 |
-
----
-
-### Cas d’utilisation : Passer une commande
-**Acteur principal** : Client
-
-#### Préconditions
-- Le client est connecté au back-office (interface client).
-- Il a un panier non vide.
-- Le produit est disponible en stock avec la quantité désirée.
-- Les informations de livraison sont spécifiées.
-- Le client choisit un mode de paiement adéquat.
-
-#### Postconditions
-- La commande est vérifiée par l’admin et confirmée.
-- Le client reçoit un mail de confirmation.
-
-|  | 1 | 2 | 3 | 4 | 5 |
-| --- | --- | --- | --- | --- | --- |
-| **Préconditions** | Client connecté | F | T | T | T | T |
-|  | Panier non vide |  | F | T | T |
-|  | Quantité disponible en stock |  |  | F | T |
-|  | Informations de livraison fournies |  |  |  | F | T |
-|  | Un mode de paiement choisi |  |  |  |  | T |
-| **Postcondition** | Recevoir un mail de confirmation | F | F | F | F | T |
-| **Nombre de jeux de tests** | 2 | 2 | 2*n | 1 | 1 |
-
----
+- Passer une commande
+- Ajouter un produit au panier
 
 
 
