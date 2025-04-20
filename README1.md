@@ -171,7 +171,7 @@ Fin
 
 TRADUCTION
 
-![Diagram](Diagrammes/user_tansition_detaille.png)
+![Diagram](Diagrammes/user_transition_detaille.png)
 
 2//Produit
 
