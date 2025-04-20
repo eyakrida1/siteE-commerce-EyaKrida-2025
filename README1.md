@@ -175,11 +175,11 @@ TRADUCTION
 
 2//Produit
 
-![Diagram](Diagrammes/produit_tansition.png)
+![Diagram](Diagrammes/produit_transition.png)
 
 TRADUCTION
 
-![Diagram](Diagrammes/produit_tansition_detaille.png)
+![Diagram](Diagrammes/produit_transition_detaille.png)
 
 3//Panier
 
@@ -191,7 +191,7 @@ TRADUCTION
 
 4//Commande
 
-![Diagram](Diagrammes/commande_tansition.png)
+![Diagram](Diagrammes/commande_transition.png)
 
 TRADUCTION
 
