@@ -163,5 +163,37 @@ Début
 &nbsp;&nbsp;fin si  
 Fin
 
+## Les diagrammes de machine à etats et leurs traductions
 
+1//User
+
+![Diagram](Diagrammes/user_tansition.png)
+
+TRADUCTION
+
+![Diagram](Diagrammes/user_tansition_detaille.png)
+
+2//Produit
+
+![Diagram](Diagrammes/produit_tansition.png)
+
+TRADUCTION
+
+![Diagram](Diagrammes/produit_tansition_detaille.png)
+
+3//Panier
+
+![Diagram](Diagrammes/panier_tansition.png)
+
+TRADUCTION
+
+![Diagram](Diagrammes/panier_tansition_detaille.png)
+
+4//Commande
+
+![Diagram](Diagrammes/commande_tansition.png)
+
+TRADUCTION
+
+![Diagram](Diagrammes/commande_tansition_detaille.png)
 
